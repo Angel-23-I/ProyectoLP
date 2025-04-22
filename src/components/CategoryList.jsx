@@ -2,6 +2,7 @@ import React from "react";
 //import { Link } from "react-router-dom";
 import { imgs, categories } from "../data2";
 import { CategoryCard } from './CategoryCard';
+import  MapCard  from "./MapCard";
 
 const [
 	imgRegiones,
@@ -13,6 +14,8 @@ export const CategoryList = () => {
 			<div className='flex flex-row flex-wrap justify-center gap-4 mt-10'>
 			<h1 className="text-white text-2xl font-bold hover:scale-110 transition-all duration-500">Aprender</h1>
 			{/* Category Link Geografia */}
+			{/* Mapa como una tarjeta */}
+			<MapCard />
 			<CategoryCard 
 				category={categories.regiones}
 				src={imgRegiones}

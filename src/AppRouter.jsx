@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { HomePage, CategoryPage } from "./pages";
+import { HomePage, CategoryPage, MapPage } from "./pages";
 import { Navbar } from "./components";
 
 
@@ -11,6 +11,7 @@ export const AppRouter = () => {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/category/:category" element={<CategoryPage />} />
+                <Route path="/map" element={<MapPage />} />
             </Routes>
         </>
     );
