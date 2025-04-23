@@ -33,7 +33,7 @@ export const CategoryPage = () => {
 
     return (
     <div 
-        className="container mx-auto flex flex-col items-center justify-center gap-10"
+        className="container mx-auto flex flex-col items-center justify-center gap-10 bg-gray-300"
         style={{ height: 'calc(100vh - 5rem)'}}
     >
         {activeQuiz ? (<Question 
