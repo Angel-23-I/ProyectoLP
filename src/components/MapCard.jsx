@@ -26,7 +26,7 @@ export const MapCard = () => {
       className="flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r from-yellow-300 to-orange-400 transition-all hover:scale-105"
     >
       <div className="p-5 flex justify-center items-center ">
-        <img src="/src/assets/regiones.png" alt="Mapa Interactivo" className="w-36" />
+        <img src="/images/regiones.png" alt="Mapa Interactivo" className="w-36" />
       </div>
       <h1 className="text-2xl font-semibold text-stone-100 bg-orange-600 bg-opacity-60 p-3 px-5">
         Explorar Mapa

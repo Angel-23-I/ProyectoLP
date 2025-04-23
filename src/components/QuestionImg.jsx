@@ -44,7 +44,7 @@ export const Question = ({
     };
 
     //link de la imagen
-    const imageUrl = `/src/assets/${filteredQuestion.correct_answer.toLowerCase()}.png`;
+    const imageUrl = `/images/${filteredQuestion.correct_answer.toLowerCase()}.png`;
 
 
     return (
