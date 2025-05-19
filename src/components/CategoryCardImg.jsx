@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 
-export const CategoryCard = ({
+export const CategoryCardImg = ({
 	category,
 	alt,
 	src,
@@ -9,7 +9,7 @@ export const CategoryCard = ({
 }) => {
 	return (
 		<Link
-			to={`/category/${category}`}
+			to={`/category2/${category}`}
 			className={`flex flex-col justify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden bg-gradient-to-r ${gradientColor} transition-all hover:scale-105`}
 		>
 			<div className='flex-grow relative'>

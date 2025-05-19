@@ -78,28 +78,29 @@ export const Question = ({
 					</div>
 
 					{/* Las respuestas aquí */}
-					<div className='grid grid-cols-2 gap-5'>
-						{/* Mapeamos un arreglo de respuesta correcta y respuestas incorrectas */}
-						{answersRandom.map((answer, index) => (
-							<button
-								className={`border p-5 rounded-lg flex justify-center items-center hover:scale-105 ${
-									selectAnswerIndex !== null &&
-									index === selectAnswerIndex
-										? answer === filteredQuestion.correct_answer
-											? 'bg-green-500'
-											: 'bg-red-500'
-										: ''
-								}`}
-								key={answer}
-								onClick={() => checkAnswer(answer, index)}
-								disabled={answered && selectAnswerIndex !== index}
-							>
-								<p className='font-medium text-center text-sm'>
-									{answer}
-								</p>
-							</button>
-						))}
-					</div>
+						<div className='grid grid-cols-2 gap-5'>
+							{answersRandom.map((answer, index) => {
+								const sanitizeFileName = (name) =>
+    								name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
+								const answerImage = `/images/${sanitizeFileName(answer)}.png`;
+								return (
+									<button
+										className={`border p-5 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition-all ${selectAnswerIndex !== null && index === selectAnswerIndex
+												? answer === filteredQuestion.correct_answer
+													? 'bg-green-500'
+													: 'bg-red-500'
+												: ''
+											}`}
+										key={answer}
+										onClick={() => checkAnswer(answer, index)}
+										disabled={answered && selectAnswerIndex !== index}
+									>
+										<img src={answerImage} alt={`imagen de ${answer}`} className='w-30 h-30 mb-2 object-contain' />
+										<p className='font-medium text-center text-sm'>{answer}</p>
+									</button>
+								);
+							})}
+						</div>
 
 					{/* Condicional para mostrar el botón de siguiente pregunta o el de finalizar */}
 					{indexQuestion + 1 === questionsFiltered.length ? (
@@ -114,7 +115,7 @@ export const Question = ({
 						</button>
 					) : (
 						<button
-							className='border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium'
+							className='border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 mt-2 hover:bg-yellow-600 hover:text-black font-medium'
 							onClick={onNextQuestion}
 						>
 							Siguiente Pregunta

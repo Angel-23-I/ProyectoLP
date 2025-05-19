@@ -1,5 +1,6 @@
 // src/pages/MapPage.jsx
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const MapPage = () => {
   useEffect(() => {
@@ -26,6 +27,12 @@ export const MapPage = () => {
       <div id="map" style={{ width: "100%", height: "600px" }}></div>
     </div>**/
     <div className="flex-grow flex flex-col items-center justify-start min-h-screen bg-cyan-600">
+      <Link
+          	to="/"
+          		className="bg-blue-300 border mt-2 px-5 py-2 rounded-lg transition-all font-bold hover:bg-yellow-500 hover:text-gray-900"
+        	>
+          	Volver al Inicio
+        </Link>
 			<h1 className="text-3xl font-bold text-center mt-6 text-white">Mapa de Colombia</h1>
 			<div id="map" className="w-full max-w-4xl h-[600px] mx-auto bg-cyan-600" />
 	</div>

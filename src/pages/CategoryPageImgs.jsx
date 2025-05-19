@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Question } from "../components/Questionimg";
+import { Question } from "../components/Question";
 import { useParams } from "react-router-dom";
 import { questions, imgs } from "../data2";
 
@@ -10,7 +10,7 @@ const shuffleArray = (array) => {
 };
 
 
-export const CategoryPage = () => {
+export const CategoryPageImgs = () => {
 
     //Leer el parametro de la URL
     const { category } = useParams();

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Results = ({ score, questionsFiltered, onReset }) => {
 	return (
@@ -19,6 +20,14 @@ export const Results = ({ score, questionsFiltered, onReset }) => {
 			>
 				Vamos de nuevo
 			</button>
+			      <div className="mt-8 text-center">
+        	<Link
+          	to="/"
+          		className="bg-blue-300 border px-5 py-2 rounded-lg transition-all font-bold hover:bg-yellow-500 hover:text-gray-900"
+        	>
+          	Volver al Inicio
+        	</Link>
+      </div>
 		</div>
 	);
 };

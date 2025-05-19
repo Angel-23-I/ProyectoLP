@@ -80,7 +80,7 @@ export const Question = ({
                     <div>
                         <h1 className='font-bold'>{filteredQuestion.question}</h1>
                     </div>
-                    <img src={imageUrl} alt="imagen de region" className="w-40 mx-auto" />
+                    <img src={imageUrl} alt="imagen de region" className="w-45 h-45 mx-auto" />
 
                     {/* Las respuestas aquí */}
                     <div className='grid grid-cols-2 gap-5'>
