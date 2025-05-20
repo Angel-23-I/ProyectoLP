@@ -59,19 +59,19 @@ _3. Subir la carpeta dist, generada por el comando del paso 1_
 _4. Abrir el despliegue de producción_
 ## Construido con 🛠️
 
-*FRAMEWORK PRINCIPAL -	React
-*EMPAQUETADOR -	Vite
-*ESTILOS -	Tailwind CSS
-*RUTEO -	React Router
-*MAPA INTERACTIVO -	SVG integrado en componentes React
-*GESTIÓN DE DATOS ESTÁTICOS -	Archivos JS locales (data2.js)
+- FRAMEWORK PRINCIPAL -	React.
+- EMPAQUETADOR -	Vite.
+- ESTILOS -	Tailwind CSS.
+- RUTEO -	React Router.
+- MAPA INTERACTIVO -	SVG integrado en componentes React.
+- GESTIÓN DE DATOS ESTÁTICOS -	Archivos JS locales (data2.js).
 
 
-## Versionado 📌
+## Versionado 
 
 Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
 
-## Autores ✒️
+## Autores 
 
 * **Angel Infante**  - [Angel-23-I](https://github.com/Angel-23-I)
 
