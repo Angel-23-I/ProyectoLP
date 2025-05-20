@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { HomePage, CategoryPage, MapPage, PaisajesPage, CategoryPageImgs, GastronomiaPage } from "./pages";
+import { HomePage, CategoryPage, MapPage, PaisajesPage, CategoryPageImgs, GastronomiaPage, TipoPaisajesPage } from "./pages";
 import { Navbar } from "./components";
 
 
@@ -15,6 +15,7 @@ export const AppRouter = () => {
                 <Route path="/paisajes" element={<PaisajesPage />} />
                 <Route path="/category2/:category" element={<CategoryPageImgs />} />
                 <Route path="/gastronomia" element={<GastronomiaPage />} />
+                <Route path="/tipo-paisajes" element={<TipoPaisajesPage />} />
             </Routes>
         </>
     );

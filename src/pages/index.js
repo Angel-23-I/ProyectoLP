@@ -4,3 +4,4 @@ export * from "./MapPage";
 export * from "./PaisajesPage";
 export * from "./CategoryPageImgs";
 export * from "./GastronomiaPage";
+export * from "./TipoPaisajesPage";

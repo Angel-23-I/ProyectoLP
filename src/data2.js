@@ -2,19 +2,23 @@
 export const imgs = [
     '/images/regiones.png',
     '/images/paisaje.png',
-    '/images/gastronomia.png'
+    '/images/gastronomia.png',
+    '/images/tipo-de-paisaje.png',
+    '/images/tipopaisaje.png'
 ];
 
 export const categories = {
     regiones: 'Regiones',
     paisaje: 'Paisaje',
-    gastronomia: 'Gastronomia'
+    gastronomia: 'Gastronomia',
+    tipopaisaje: 'Tipo-de-paisaje'
 };
 
 const {
     regiones,
     paisaje,
-    gastronomia
+    gastronomia,
+    tipopaisaje
 } = categories;
 
 export const questions = [
@@ -137,7 +141,7 @@ export const questions = [
         difficulty: 'Fácil',
         question: 'Es una corriente de agua que fluye hacia el mar',
         category: paisaje,
-        correct_answer: 'Río',
+        correct_answer: 'Rio',
         incorrect_answers: [
             'Bosque',
             'Montaña',
@@ -359,6 +363,95 @@ export const questions = [
             'Hayacas',
             'Mojojoy',
         ],
-    }
-
+    },
+    {
+        id: 30,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es una playa con arena y mar?',
+        category: tipopaisaje,
+        correct_answer: 'Natural',
+        incorrect_answers: ['Cultural'],
+        nombre_paisaje: 'playa'
+    },
+    {
+        id: 31,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es una ciudad con edificios y calles?',
+        category: tipopaisaje,
+        correct_answer: 'Cultural',
+        incorrect_answers: ['Natural'],
+        nombre_paisaje: 'ciudad'
+    },
+    {
+        id: 32,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es una montaña con nieve en la cima?',
+        category: tipopaisaje,
+        correct_answer: 'Natural',
+        incorrect_answers: ['Cultural'],
+        nombre_paisaje: 'montaña'
+    },
+    {
+        id: 33,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es un parque de diversiones con juegos mecánicos?',
+        category: tipopaisaje,
+        correct_answer: 'Cultural',
+        incorrect_answers: ['Natural'],
+        nombre_paisaje: 'parque_diversiones'
+    },
+    {
+        id: 34,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es un bosque con muchos árboles y animales?',
+        category: tipopaisaje,
+        correct_answer: 'Natural',
+        incorrect_answers: ['Cultural'],
+        nombre_paisaje: 'bosque'
+    },
+    {
+        id: 35,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es una iglesia antigua en el centro de un pueblo?',
+        category: tipopaisaje,
+        correct_answer: 'Cultural',
+        incorrect_answers: ['Natural'],
+        nombre_paisaje: 'iglesia'
+    },
+    {
+        id: 36,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es un río que cruza un valle?',
+        category: tipopaisaje,
+        correct_answer: 'Natural',
+        incorrect_answers: ['Cultural'],
+        nombre_paisaje: 'rio'
+    },
+    {
+        id: 37,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es una carretera que conecta dos ciudades?',
+        category: tipopaisaje,
+        correct_answer: 'Cultural',
+        incorrect_answers: ['Natural'],
+        nombre_paisaje: 'carretera'
+    },
+    {
+        id: 38,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es un volcán activo rodeado de vegetación?',
+        category: tipopaisaje,
+        correct_answer: 'Natural',
+        incorrect_answers: ['Cultural'],
+        nombre_paisaje: 'volcán'
+    },
+    {
+        id: 39,
+        difficulty: 'Fácil',
+        question: '¿Qué tipo de paisaje es una zona arqueológica con ruinas antiguas?',
+        category: tipopaisaje,
+        correct_answer: 'Cultural',
+        incorrect_answers: ['Natural'],
+        nombre_paisaje: 'zona_arqueologica'
+    },
 ];

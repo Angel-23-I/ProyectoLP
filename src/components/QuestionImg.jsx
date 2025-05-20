@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Results } from './Results';
+import { categories } from '../data2';
 
 export const Question = ({
     filteredQuestion,
@@ -43,8 +44,18 @@ export const Question = ({
         setIndexQuestion(0);
     };
 
+    //validar la categoria para saber de donde tomar el nombre de la imagne, cuando la categoria sea "tipopaisaje" se toma de nombre_paisaje dentro del objeto
+let imageUrl = ''; // Declarar fuera del if
+//console.log(filteredQuestion.category)
+if (filteredQuestion.category === "Tipo-de-paisaje") {
+    imageUrl = `/images/${filteredQuestion.nombre_paisaje.toLowerCase()}.png`;
+    console.log(filteredQuestion.nombre_paisaje);
+} else {
+    imageUrl = `/images/${filteredQuestion.correct_answer.toLowerCase()}.png`;
+}
+
     //link de la imagen
-    const imageUrl = `/images/${filteredQuestion.correct_answer.toLowerCase()}.png`;
+    //const imageUrl = `/images/${filteredQuestion.correct_answer.toLowerCase()}.png`;
 
 
     return (

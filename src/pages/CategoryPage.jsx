@@ -14,11 +14,12 @@ export const CategoryPage = () => {
 
     //Leer el parametro de la URL
     const { category } = useParams();
-    //console.log(category);
+    console.log(category);
 
     const [imgCategory] = imgs.filter(
 		img => img === `/images/${category.toLowerCase()}.png`
 	);
+    console.log(imgCategory);
 
     const [questionsFiltered, setQuestionsFiltered] = useState(questions.filter(question => question.category === category));
 
