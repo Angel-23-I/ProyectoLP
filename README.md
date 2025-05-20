@@ -8,17 +8,30 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
-
 ### Pre-requisitos 
 
-_1.	Clona o descarga el repositorio._
-_2.	Instala las dependencias:_
+Antes de clonar y ejecutar este proyecto, asegúrate de tener instalado lo siguiente en tu máquina:
 
-```
-npm install
-```
+###  Requisitos del entorno
 
-### Instalación 🔧
+- **[Node.js](https://nodejs.org/)** versión **16.x** o superior  
+  (Recomendado: usar [nvm](https://github.com/nvm-sh/nvm) para gestionar versiones)
+- **npm** (incluido con Node.js) o **yarn** como gestor de paquetes
+- **Git** (para clonar el repositorio)
+- Navegador moderno (recomendado: Google Chrome o Firefox)
+
+### Dependencias principales
+
+Estas se instalan automáticamente al ejecutar `npm install`, pero vale la pena listarlas:
+
+- **[Vite](https://vitejs.dev/)** – para el desarrollo rápido y optimización de la app React
+- **[React](https://reactjs.org/)** y **React DOM** – la biblioteca principal de la interfaz
+- **[React Icons](https://react-icons.github.io/react-icons/)** – íconos reutilizables para la UI
+- **[Tailwind CSS](https://tailwindcss.com/)** – estilos utilitarios y responsivos
+
+---
+
+### Instalación 
 
 _1.	Clona o descarga el repositorio._
 _2.	Instala las dependencias:_
